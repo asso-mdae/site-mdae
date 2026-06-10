@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association | MDAE - Magistère de Droit des Activités Économiques</title>
+    <meta name="description" content="L'association des étudiants du MDAE : présentation, équipe, bureau et conseil d'administration.">
+    <link rel="canonical" href="https://www.mdae.fr/association">
+    <meta name="theme-color" content="#042040">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="header" role="banner">
+        <nav class="container nav" aria-label="Navigation principale">
+            <a href="index.html" class="nav__logo" aria-label="MDAE - Retour à l'accueil">
+                <img src="images/LogoMDAE.png" alt="Logo MDAE" class="nav__logo-img">
+            </a>
+            <div class="nav__menu">
+                <a href="index.html" class="nav__link">Accueil</a>
+                <a href="presentation.html" class="nav__link">Présentation</a>
+                <a href="formation.html" class="nav__link">Formation</a>
+                <a href="association.html" class="nav__link active">Association</a>
+                <a href="actualites.html" class="nav__link">Actualités</a>
+                <a href="gazette.html" class="nav__link">Gazette</a>
+                <a href="promotions.html" class="nav__link">Promotions</a>
+                <a href="alumni.html" class="nav__link">Alumni</a>
+            </div>
+            <a href="index.html#contact" class="nav__cta">Contactez-nous<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+            <button class="nav__mobile-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="nav__mobile-menu container">
+            <a href="index.html" class="nav__mobile-link">Accueil</a>
+            <a href="presentation.html" class="nav__mobile-link">Présentation</a>
+            <a href="formation.html" class="nav__mobile-link">Formation</a>
+            <a href="association.html" class="nav__mobile-link">Association</a>
+            <a href="actualites.html" class="nav__mobile-link">Actualités</a>
+            <a href="gazette.html" class="nav__mobile-link">Gazette</a>
+            <a href="promotions.html" class="nav__mobile-link">Promotions</a>
+            <a href="alumni.html" class="nav__mobile-link">Alumni</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero" style="--page-hero-bg: url('images/PromoAsso.jpg');">
+            <style>
+                .page-hero::before {
+                    background: var(--page-hero-bg, url('images/Pantheon.avif')) center 25%/100% auto no-repeat !important;
+                }
+            </style>
+            <div class="container page-hero__content">
+                <h1 class="page-hero__title">Association</h1>
+                <p class="page-hero__subtitle">L'association des étudiants du MDAE</p>
+            </div>
+        </section>
+
+        <section class="section section--white">
+            <div class="container">
+                <div class="section__label">Présentation</div>
+                <h2 class="section__title">L'association des étudiants du MDAE</h2>
+                <div class="section__content">
+                    <p>L'Association des Étudiants du Magistère de Droit des Activités Économiques anime la vie du diplôme et fédère les étudiants actuels ainsi que les anciens.</p>
+                </div>
+
+                <div class="cards-grid" style="margin-top: 3rem;">
+                    <div class="card">
+                        <h3 class="card__title">Le bureau</h3>
+                        <div class="card__content">
+                            <p><strong>Président :</strong> M. Téo BUCHHOLZ</p>
+                            <p>E-mail : <a href="mailto:mdae.asso@gmail.com" style="color: var(--color-accent-dark);">mdae.asso@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Contact</h3>
+                        <div class="card__content">
+                            <p>Pour toute question relative à l'association, vous pouvez nous contacter par email.</p>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LE BUREAU Section -->
+        <section class="section section--bureau">
+            <style>
+                .section--bureau {
+                    background-color: #f8f6f3;
+                    padding: 0;
+                }
+                .bureau-grid {
+                    display: flex;
+                    justify-content: center;
+                    align-items: stretch;
+                    max-width: 1400px;
+                    margin: 0 auto;
+                }
+                .bureau-member {
+                    flex: 1;
+                    position: relative;
+                    overflow: hidden;
+                    min-height: 500px;
+                }
+                .bureau-member__img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                }
+                .bureau-member__info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 1.5rem 1rem;
+                    background: linear-gradient(to top, rgba(4, 32, 64, 0.9), transparent);
+                    text-align: center;
+                    color: white;
+                }
+                .bureau-member__name {
+                    font-family: var(--font-display);
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    margin-bottom: 0.25rem;
+                }
+                .bureau-member__title {
+                    font-family: var(--font-ui);
+                    font-size: 0.95rem;
+                    font-style: italic;
+                    opacity: 0.9;
+                    margin-bottom: 0.75rem;
+                }
+                .bureau-member__linkedin {
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    background: #0077b5;
+                    border-radius: 6px;
+                    padding: 6px;
+                    transition: transform 0.2s ease, background-color 0.2s ease;
+                }
+                .bureau-member__linkedin:hover {
+                    transform: scale(1.1);
+                    background: #005582;
+                }
+                .bureau-member__linkedin svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: white;
+                }
+                .bureau-center {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 3rem 2rem;
+                    background-color: #e8f4f4;
+                    text-align: center;
+                    min-height: 500px;
+                }
+                .bureau-center__title {
+                    font-family: var(--font-display);
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--color-primary);
+                    line-height: 1.2;
+                    margin-bottom: 1.5rem;
+                }
+                .bureau-center__line {
+                    width: 40px;
+                    height: 3px;
+                    background: var(--color-primary);
+                    margin-bottom: 1.5rem;
+                    transform: rotate(-45deg);
+                }
+                .bureau-center__desc {
+                    font-family: var(--font-body);
+                    font-size: 1rem;
+                    color: var(--color-text);
+                    line-height: 1.6;
+                    max-width: 200px;
+                }
+                @media (max-width: 1024px) {
+                    .bureau-grid {
+                        flex-wrap: wrap;
+                    }
+                    .bureau-member {
+                        flex: 1 1 50%;
+                        min-height: 400px;
+                    }
+                    .bureau-center {
+                        flex: 1 1 100%;
+                        order: -1;
+                        min-height: auto;
+                        padding: 2rem;
+                    }
+                }
+                @media (max-width: 640px) {
+                    .bureau-member {
+                        flex: 1 1 100%;
+                        min-height: 450px;
+                    }
+                }
+            </style>
+            <div class="bureau-grid">
+                <!-- Téo BUCHHOLZ - Président -->
+                <div class="bureau-member">
+                    <img src="images/TeoAsso.jpg" alt="Téo BUCHHOLZ" class="bureau-member__img">
+                    <div class="bureau-member__info">
+                        <div class="bureau-member__name">Téo BUCHHOLZ</div>
+                        <div class="bureau-member__title">Président</div>
+                        <a href="https://www.linkedin.com/in/t%C3%A9o-buchholz-367441262/" target="_blank" rel="noopener" class="bureau-member__linkedin" aria-label="LinkedIn de Téo BUCHHOLZ">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Anton LE GOUAHLER - Trésorier -->
+                <div class="bureau-member">
+                    <img src="images/AntonAsso.jpg" alt="Anton LE GOUAHLER" class="bureau-member__img">
+                    <div class="bureau-member__info">
+                        <div class="bureau-member__name">Anton LE GOUAHLER</div>
+                        <div class="bureau-member__title">Trésorier</div>
+                        <a href="https://www.linkedin.com/in/anton-le-goualher-42003428b/" target="_blank" rel="noopener" class="bureau-member__linkedin" aria-label="LinkedIn d'Anton LE GOUAHLER">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Center Panel -->
+                <div class="bureau-center">
+                    <h2 class="bureau-center__title">LE<br>BUREAU</h2>
+                    <div class="bureau-center__line"></div>
+                    <p class="bureau-center__desc">Une association dynamique organisant une multitude d'évènements.</p>
+                </div>
+                <!-- Emma BIZZARI - Vice-Président -->
+                <div class="bureau-member">
+                    <img src="images/EmmaAsso.jpg" alt="Emma BIZZARI" class="bureau-member__img">
+                    <div class="bureau-member__info">
+                        <div class="bureau-member__name">Emma BIZZARI</div>
+                        <div class="bureau-member__title">Vice-Présidente</div>
+                        <a href="https://www.linkedin.com/in/emma-bizzari-22b299259/" target="_blank" rel="noopener" class="bureau-member__linkedin" aria-label="LinkedIn d'Emma BIZZARI">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Simon VANEECLOO - Secrétaire Général -->
+                <div class="bureau-member">
+                    <img src="images/SimonAsso.JPG" alt="Simon VANEECLOO" class="bureau-member__img">
+                    <div class="bureau-member__info">
+                        <div class="bureau-member__name">Simon VANEECLOO</div>
+                        <div class="bureau-member__title">Secrétaire Général</div>
+                        <a href="https://www.linkedin.com/in/simon-vaneecloo-960411239/" target="_blank" rel="noopener" class="bureau-member__linkedin" aria-label="LinkedIn de Simon VANEECLOO">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- L'ÉQUIPE DE L'ASSOCIATION Section -->
+        <section class="section section--equipe">
+            <style>
+                .section--equipe {
+                    background-color: #ffffff;
+                    padding: 4rem 0;
+                }
+                .equipe-container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 2rem;
+                }
+                .equipe-header {
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+                .equipe-header__title {
+                    font-family: var(--font-display);
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--color-primary);
+                    margin-bottom: 0.5rem;
+                }
+                .equipe-header__subtitle {
+                    font-family: var(--font-ui);
+                    font-size: 1rem;
+                    color: var(--color-text-muted);
+                }
+                .equipe-group {
+                    margin-bottom: 3rem;
+                }
+                .equipe-group__title {
+                    font-family: var(--font-display);
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: var(--color-primary);
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    padding-bottom: 0.75rem;
+                    border-bottom: 2px solid var(--color-accent);
+                    display: inline-block;
+                    width: 100%;
+                }
+                .equipe-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 2rem;
+                    justify-items: center;
+                }
+                .equipe-member {
+                    text-align: center;
+                    max-width: 200px;
+                }
+                .equipe-member__link {
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 0.75rem;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s ease;
+                    margin-bottom: 1rem;
+                }
+                .equipe-member__link:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                }
+                .equipe-member__img {
+                    width: 100%;
+                    aspect-ratio: 3/4;
+                    object-fit: cover;
+                    object-position: center top;
+                    display: block;
+                }
+                .equipe-member__linkedin-overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 0.75rem;
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+                    display: flex;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                .equipe-member__link:hover .equipe-member__linkedin-overlay {
+                    opacity: 1;
+                }
+                .equipe-member__linkedin-icon {
+                    width: 30px;
+                    height: 30px;
+                    background: #0077b5;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                .equipe-member__linkedin-icon svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: white;
+                }
+                .equipe-member__name {
+                    font-family: var(--font-ui);
+                    font-size: 0.95rem;
+                    font-weight: 600;
+                    color: var(--color-primary);
+                }
+                @media (max-width: 900px) {
+                    .equipe-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1.5rem;
+                    }
+                }
+                @media (max-width: 500px) {
+                    .equipe-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
+                    }
+                    .equipe-member {
+                        max-width: 160px;
+                    }
+                }
+            </style>
+            <div class="equipe-container">
+                <div class="equipe-header">
+                    <h2 class="equipe-header__title">L'ÉQUIPE DE L'ASSOCIATION</h2>
+                    <p class="equipe-header__subtitle">Les administrateurs</p>
+                </div>
+
+                <!-- Représentants de troisième année -->
+                <div class="equipe-group">
+                    <h3 class="equipe-group__title">Représentants de troisième année</h3>
+                    <div class="equipe-grid">
+                        <!-- Thomas CHARGELEGUE -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/thomaschargelegue/" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/ThomasAsso.jpeg" alt="Thomas CHARGELEGUE" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Thomas CHARGELEGUE</div>
+                        </div>
+                        <!-- Baptiste ASSIÉ -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/baptiste-assi%C3%A9/" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/BaptisteAsso.jpeg" alt="Baptiste ASSIÉ" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Baptiste ASSIÉ</div>
+                        </div>
+                        <!-- Noé COUVERT -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/no%C3%A9-couvert-73ab72220/" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/NoeAsso.jpeg" alt="Noé COUVERT" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Noé COUVERT</div>
+                        </div>
+                        <!-- Eva ETHERTON -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/eva-etherton/" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/EvaAsso.jpeg" alt="Eva ETHERTON" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Eva ETHERTON</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Représentants de première année -->
+                <div class="equipe-group">
+                    <h3 class="equipe-group__title">Représentants de première année</h3>
+                    <div class="equipe-grid">
+                        <!-- Ruben FOUGERE -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/ruben-fougere-880a681a7" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/RubenAsso.jpg" alt="Ruben FOUGERE" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Ruben FOUGERE</div>
+                        </div>
+                        <!-- Matthieu PYTKOWICZ -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/matthieu-pytkowicz-74840a2b3" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/MatthieuAsso.jpeg" alt="Matthieu PYTKOWICZ" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Matthieu PYTKOWICZ</div>
+                        </div>
+                        <!-- Orphée REMOND -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/orph%C3%A9e-remond-502444288" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/OrpheeAsso.png" alt="Orphée REMOND" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Orphée REMOND</div>
+                        </div>
+                        <!-- Lina DEDIC -->
+                        <div class="equipe-member">
+                            <a href="https://www.linkedin.com/in/lina-dedic-3a02b7334" target="_blank" rel="noopener" class="equipe-member__link">
+                                <img src="images/LinaAsso.jpg" alt="Lina DEDIC" class="equipe-member__img">
+                                <div class="equipe-member__linkedin-overlay">
+                                    <div class="equipe-member__linkedin-icon">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="equipe-member__name">Lina DEDIC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">
+                        <img src="images/LogoMDAE.png" alt="Logo MDAE" class="footer__brand-img">
+                    </div>
+                    <p class="footer__copy">© Association des étudiants du Magistère de Droit des Activités Economiques – 2025<br>Tous droits réservés</p>
+                </div>
+                <div>
+                    <h4 class="footer__nav-title">Navigation</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="presentation.html" class="footer__nav-link">Présentation</a></li>
+                        <li><a href="formation.html" class="footer__nav-link">Formation</a></li>
+                        <li><a href="actualites.html" class="footer__nav-link">Actualités</a></li>
+                        <li><a href="alumni.html" class="footer__nav-link">Alumni</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__nav-title">Informations</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="mentions-legales.html" class="footer__nav-link">Mentions légales</a></li>
+                        <li><a href="https://www.univ-paris1.fr" target="_blank" rel="noopener" class="footer__nav-link">Paris 1 Panthéon-Sorbonne</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#main-content">Haut de page</a>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/mdae/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.facebook.com/mdae.sorbonne/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/MDAE_Sorbonne" target="_blank" rel="noopener">X</a>
+                    <a href="https://www.instagram.com/mdae_sorbonne/" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
